@@ -14,7 +14,7 @@ export default function Header() {
             <div className="row">
 
                 <div className="d-flex mx-5 gap-3 justify-content-center align-items-center mt-3  myBox" >
-                    <img src={logo} alt="logo" className="img-fluid" />   <Nav />
+                   <a href="#"> <img src={logo} alt="logo" className="img-fluid" /> </a>  <Nav />
                 </div>
 
             </div>
