@@ -6,9 +6,9 @@ export default function Nav() {
 
         <>
 
-            <nav>
+            <nav id="myNav">
 
-                <ul className="d-flex gap-3">
+                <ul className="d-flex gap-5 pt-2   ">
                     <li>
                         <a href="#">
                             Home

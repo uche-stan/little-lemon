@@ -1,4 +1,4 @@
-import footerImage from '../assets/icons_assets/restauranfood.jpg'
+
 import { BiChevronRight } from 'react-icons/bi';
 import { BsTwitter } from 'react-icons/bs';
 import { BsFacebook } from 'react-icons/bs';
@@ -25,7 +25,7 @@ export default function Footer() {
 
 
 
-                            <div class="col-lg-4 col-md-4 footer-links text-start text-md-center">
+                            <div className="col-lg-4 col-md-4 footer-links text-start text-md-center">
                                 <h4>Doormant Navigation</h4>
                                 <div className='d-flex gap-3 justify-content-start  justify-content-md-center   align-items-center'>
 
@@ -56,15 +56,15 @@ export default function Footer() {
 
 
 
-                            <div class="col-lg-4 col-md-4 footer-links d-flex justify-content-start justify-content-md-center  mt-4">
+                            <div className="col-lg-4 col-md-4 footer-links d-flex justify-content-start justify-content-md-center  mt-4">
                                 <div>
                                     <h4>Social Media links</h4>
 
-                                    <div class="social-links mt-3 ">
-                                        <a href="#" class="twitter"><i><BsTwitter /></i></a>
-                                        <a href="#" class="facebook"><i><BsFacebook /></i></a>
-                                        <a href="#" class="instagram"><i><BsInstagram /></i></a>
-                                        <a href="#" class="instagram"><i><BsLinkedin /></i></a>
+                                    <div className="social-links mt-3 ">
+                                        <a href="#" className="twitter"><i><BsTwitter /></i></a>
+                                        <a href="#" className="facebook"><i><BsFacebook /></i></a>
+                                        <a href="#" className="instagram"><i><BsInstagram /></i></a>
+                                        <a href="#" className="instagram"><i><BsLinkedin /></i></a>
 
                                     </div>
                                 </div>

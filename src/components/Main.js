@@ -1,4 +1,4 @@
-
+import Hero from "./Hero"
 
 export default function Main() {
 
@@ -7,6 +7,9 @@ export default function Main() {
         <>
 
             <main className="main-box">
+                
+                <Hero />
+
 
             </main>
 
