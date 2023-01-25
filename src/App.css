@@ -1,23 +1,16 @@
+ /* 
 
-/* General */
 
 h1, h2, h3, h4, h5, h6 {
   font-family: "markazi text";
  
 }
 
-/* Header */
-
-#header .logo {
 
 
-}
 
 @media (max-width: 768px) {
-  #header .logo {
-   
-  
-  }
+ 
 
   #header .navbar{
    
@@ -28,20 +21,32 @@ h1, h2, h3, h4, h5, h6 {
 }
 
 
-/* Nav */
 
-nav li{
+
+#nav ul{
+
+  display: flex;
+  flex-flow: row wrap;
+  justify-content: stretch;
+  
+}
+
+#nav li{
 
   list-style-type: none;
 }
 
-nav li a{
+#nav li a{
 
   text-decoration: none;
   color: black;
+  display: inline-block;
+  padding:0 20px;
+  
+  
 }
 
-nav li a:hover{
+#nav li a:hover{
   color: #495E57
 }
 
@@ -50,7 +55,7 @@ nav li a:hover{
   height: 60px;
 }
 
-/* Main */
+
 
 .main-box{
 
@@ -58,7 +63,7 @@ nav li a:hover{
 }
 
 
-/* Footer */
+
 
 #footer{
 
@@ -142,7 +147,7 @@ nav li a:hover{
 
 
 
-/* Hamburger Menu */
+
 
 
 .menu {
@@ -162,7 +167,7 @@ nav li a:hover{
 
 
 
-/* Hero  */
+
 
 #hero{
   width: 100%;
@@ -266,3 +271,312 @@ nav li a:hover{
 
 }
 
+
+
+.flex-box{
+
+  display: flex;
+}
+
+.box{
+
+  padding: 40px;
+  margin: 10px;
+  border: 1px solid red;
+}   */
+
+
+
+/* Fresh Stylling */
+
+/* General */
+
+body{
+  font-family: karla ,Verdana, Geneva, Tahoma, sans-serif;
+  margin: 0;
+  padding: 0;
+}
+
+h1, h2, h3, h4, h5, h6{
+
+  font-family: 'Markazi Text', serif;
+}
+
+a{
+
+  color: black;
+  text-decoration: none;
+}
+
+a:hover{
+
+  color: #495e57;
+}
+
+
+/* Header */
+
+#header {
+
+  display: flex;
+  justify-content: center;
+ background: white;
+ 
+
+}
+
+#header img{
+
+  height: 40px;
+  margin: 12px 0;
+
+}
+
+/* Nav */
+
+#nav ul{
+
+  display: flex;
+  flex-flow: row wrap;
+  justify-content: stretch;
+  align-items: center;
+  
+
+}
+
+#nav li{
+
+  list-style-type: none;
+}
+
+#nav li a{
+
+  display: inline-block;
+  padding: 20px 10px;
+ 
+}
+
+#nav li a:hover{
+
+  color: #495e57;
+}
+
+@media (max-width: 768px) {
+  #nav ul a{
+
+      display: none;
+
+  }
+}
+
+
+/* Hero */
+
+#hero .hero{
+
+  background-color: #495e57;
+  width: 100%;
+  height: 60vh;
+}
+
+#hero img{
+
+  max-height: 500px;
+  padding: 30px 0;
+
+}
+
+#hero h1{
+
+  color:#f4ce14;
+}
+
+#hero .hero-title{
+
+  display:grid;
+  grid-template-columns:  300px;
+  justify-content: end;
+  color: white;
+  padding:30px 20px;
+
+}
+
+#hero a{
+
+  background: #f4ce14;
+  border-radius: 12px;
+  padding: 10px 25px;
+  
+}
+
+#hero a:hover{
+
+  background: #f4ce14;
+  color: black;
+  border-radius: 12px;
+  padding: 10px 25px;
+  
+}
+
+@media (max-width: 768px) {
+  #hero .hero-title{
+
+    display:grid;
+    grid-template-columns:  1fr;
+    justify-content: end;
+    padding:30px 20px;
+
+  }
+
+  #hero img{
+
+    max-height: 300px;
+    max-width: 200px;
+    border-radius: 12px;
+
+  
+  }
+
+  }
+
+
+
+
+  /* Specials */
+
+  #specials .specials{
+
+    display: flex;
+    justify-content: space-evenly;
+    margin: 80px 10px;
+  }
+
+
+  #specials .card-title > p{
+    font-weight: bold;
+  }
+
+  #specials .card-title p + p{
+    color:rgb(234, 105, 50)
+  }
+
+
+  /* Rough Specials */
+
+  #specials .img-box{
+
+    width: 30%;
+  }
+
+  #specials .card{
+
+    width: 100%;
+    
+  }
+
+  @media (min-width: 768px) {
+   
+    #specials .img-box{
+
+      width: 100%;
+    }
+
+    #specials .card{
+
+      width: 18rem;
+
+    }
+
+    }
+
+    #specials button{
+
+      background: #f4ce14;
+      color: black;
+    }
+
+
+
+
+    /* Footer */
+
+    #footer{
+
+      font-size: 14px;
+      background: #37517e;
+    }
+
+    #footer .footer-top {
+      padding: 60px 0 30px 0;
+      background: #fff;
+    }
+
+    #footer .footer-top h4 {
+      font-size: 16px;
+      font-weight: bold;
+      color: #495E57;
+      position: relative;
+      padding-bottom: 12px;
+    }
+
+
+    #footer .footer-top .footer-contact {
+      margin-bottom: 30px;
+    }
+
+    #footer .footer-top .footer-links {
+      margin-bottom: 30px;
+
+    }
+
+    #footer .footer-top .footer-links ul {
+      list-style: none;
+      padding: 0;
+      margin: 0;
+    }
+    #footer .footer-top .footer-links ul i {
+      padding-right: 2px;
+      color: #EE9972;
+      font-size: 18px;
+      line-height: 1;
+    }
+    #footer .footer-top .footer-links ul li {
+      padding: 10px 0;
+      display: flex;
+      align-items: center;
+    }
+    #footer .footer-top .footer-links ul li:first-child {
+      padding-top: 0;
+    }
+    #footer .footer-top .footer-links ul a {
+      text-decoration: none;
+      color: #777777;
+      transition: 0.3s;
+      display: inline-block;
+      line-height: 1;
+    }
+    #footer .footer-top .footer-links ul a:hover {
+      text-decoration: underline;
+      color: #EE9972;
+    }
+    
+    #footer .footer-top .social-links a {
+      font-size: 18px;
+      display: inline-block;
+      background: #495E57;
+      color: #fff;
+      line-height: 1;
+      padding: 8px 0;
+      margin-right: 4px;
+      border-radius: 50%;
+      text-align: center;
+      width: 36px;
+      height: 36px;
+      transition: 0.3s;
+    }
+    #footer .footer-top .social-links a:hover {
+      background: #EE9972;
+      color: #fff;
+      text-decoration: none;
+    }
+    

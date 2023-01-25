@@ -1,4 +1,4 @@
-
+import { Link } from "react-router-dom"
 
 export default function Nav() {
 
@@ -6,43 +6,41 @@ export default function Nav() {
 
         <>
 
-            <nav id="myNav">
+            <nav id="nav">
 
-                <ul className="d-flex gap-5 pt-2   ">
+                <ul className="  ">
                     <li>
-                        <a href="#">
-                            Home
-                        </a>
+                        <Link to="/" className="nav-link">Home</Link>
                     </li>
 
                     <li>
-                        <a href="#">
-                            About
-                        </a>
+                    <li>
+                        <Link to="/" className="nav-link">About</Link>
+                    </li>
                     </li>
 
                     <li>
-                        <a href="#">
-                            Menu
-                        </a>
+                    <li>
+                        <Link to="/" className="nav-link">Menu</Link>
+                    </li>
                     </li>
 
                     <li>
-                        <a href="#">
-                            Reservations
-                        </a>
+                    <li>
+                        <Link to="/" className="nav-link">Reservations</Link>
+                    </li>
                     </li>
 
                     <li>
-                        <a href="#">
-                            Order online
-                        </a>
+                    <li>
+                        <Link to="/" className="nav-link">Order Online</Link>
+                    </li>
                     </li>
 
                     <li>
-                        <a href="#">
-                            Login
-                        </a>
+                    <li>
+                        <Link to="/" className="nav-link">Login</Link>
+                    </li>
                     </li>
                 </ul>
             </nav>
