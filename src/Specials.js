@@ -16,6 +16,19 @@ export default function Specials() {
                     <button className="btn btn-warning">Online menu</button>
                 </div>
 
+                <div>
+
+                    <h2 className='mt-5 px-2 d-sm-none'>ORDER FOR DELIVERY!</h2>
+                    <div className='orders mt-4 '>
+                        <button className='btn btn-light'>Lunch</button>
+                        <button className='btn btn-light'>Mains</button>
+                        <button className='btn btn-light'>Desserts</button>
+                        <button className='btn btn-light'>A Lar Carte</button>
+                        <button className='btn btn-light'>Specials</button>
+                    </div>
+                </div>
+    
+
 
                 {/* <!-- Specials --> */}
 

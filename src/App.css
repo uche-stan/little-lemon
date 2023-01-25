@@ -319,7 +319,7 @@ a:hover{
 #header {
 
   display: flex;
-  justify-content: center;
+  justify-content:space-around;
  background: white;
  
 
@@ -331,6 +331,22 @@ a:hover{
   margin: 12px 0;
 
 }
+
+@media (min-width: 768px) {
+ #header .hamburger, .basket{
+  display: none;
+ }
+
+ #header {
+
+  display: flex;
+  justify-content:center;
+ 
+ 
+
+}
+}
+
 
 /* Nav */
 
@@ -451,6 +467,33 @@ a:hover{
     margin: 80px 10px;
   }
 
+  #specials h2{
+
+    font-weight: bold;
+  }
+
+  #specials .orders{
+     display: flex;
+    flex-flow: row nowrap;
+    justify-content:space-around; 
+    
+   
+    
+   
+   
+    overflow: scroll;
+  }
+
+  #specials .orders button{
+
+   background: #edefee;
+   color:#495E57;
+   font-weight: bold;
+   overflow-x: scroll;
+ 
+  }
+
+
 
   #specials .card-title > p{
     font-weight: bold;
@@ -487,7 +530,27 @@ a:hover{
 
     }
 
+    #specials .orders{
+
+      display: none;
+      flex-flow: row nowrap;
+      justify-content: space-around;
     }
+  
+
+    }
+
+
+    @media (max-width: 768px) {
+   
+    
+      #specials .specials{
+  
+        display: none;
+       
+      }
+  
+      }
 
     #specials button{
 
