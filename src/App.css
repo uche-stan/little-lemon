@@ -643,3 +643,13 @@ a:hover{
       text-decoration: none;
     }
     
+
+
+    /* Booking form */
+
+    #booking-form form{
+
+      display: grid; 
+      max-width: 200px; 
+      gap: 20px;
+    }

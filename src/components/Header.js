@@ -18,7 +18,7 @@ export default function Header() {
 
         <header id="header" >
 
-            <div className="hamburger"><img src={hamburgerIcon} alt=""Hamburger width="30px"/></div>
+            <div className="hamburger"><img src={hamburgerIcon} alt="Hamburger" width="30px"/></div>
 
             <div>
 
