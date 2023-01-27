@@ -31,7 +31,7 @@ export default function Hero() {
                                         focused on traditional recipes served with a modern twist.</p>
                                 </div>
 
-                                <Link to="/booking-form" className='mt-5 btn'>Reserve a Table</Link>
+                                <Link to="/booking-page" className='mt-5 btn'>Reserve a Table</Link>
                             </div>
 
                         </div>

@@ -5,7 +5,7 @@ import Foot from './components/Foot';
 import { Route, Routes } from 'react-router-dom'
 import HomePage from './components/HomePage';
 import Hero from './components/Hero';
-import BookingForm from './components/BookingForm';
+import BookingPage from './components/BookingPage';
 
 import MyApp from './components/MyApp';
 
@@ -28,7 +28,7 @@ function App() {
 
         <Route path='/' element={<HomePage />}></Route>
         <Route path='/my-app' element={<MyApp />}></Route>
-        <Route path='/booking-form' element={<BookingForm />}></Route>
+        <Route path='/booking-page' element={<BookingPage />}></Route>
         
       </Routes>
 
