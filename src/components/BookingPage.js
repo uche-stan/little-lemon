@@ -1,9 +1,11 @@
 import BookingForm from "./BookingForm"
+import Header from "./Header"
+import Footer from "./Footer"
 import { useState } from "react"
+import times from './availableTimes'
 
 
-
-export default function BookingPage(props) {
+export default function BookingPage() {
 
     const [form, setForm] = useState({
 
@@ -28,25 +30,6 @@ export default function BookingPage(props) {
 
     }
 
-    function handleDate(e) {
-
-        setForm(prevForm => {
-
-            return {
-                ...prevForm,
-                date: e.target.value,
-            }
-        })
-
-        props.dispatch(
-            {
-                type: "01/30/2023",
-
-
-            }
-        )
-    }
-
     function handleForm(e) {
         e.preventDefault()
     }
@@ -55,23 +38,11 @@ export default function BookingPage(props) {
 
         <>
 
+            <Header />
 
+            <BookingForm  form={form} handleChange={handleChange} handleForm={handleForm}/>
 
-            <div id="booking-page">
-                <BookingForm
-                    form={form}
-                    handleChange={handleChange}
-                    handleForm={handleForm}
-                    availableTimes={props.availableTimes}
-                    updateTimes={props.updateTimes}
-                    handleDate={handleDate}
-
-
-                />
-
-
-            </div>
-
+            <Footer />
 
         </>
     )
