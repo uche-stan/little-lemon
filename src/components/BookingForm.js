@@ -1,6 +1,4 @@
-
 import { useState } from "react"
-import times from './availableTimes'
 
 export default function BookingForm(props) {
 
@@ -21,7 +19,7 @@ export default function BookingForm(props) {
                         <div className="col " >
 
 
-
+                            
                             <div className="row" style={{ background: "#495E57", color: "#f4ce14" }}>  <h2 className="text-center  p-3">Book A Table</h2></div>
 
 
@@ -30,15 +28,15 @@ export default function BookingForm(props) {
                                 <form onSubmit={props.handleForm}>
 
 
-                                    <label className="form-label" htmlFor="res-date">Choose date</label>
-                                    <input className="form-control" type="date" id="res-date" name="date" value={props.form.date}
-                                        onChange={props.handleChange} />
+                                    <label className="form-label" htmlFor="date">Choose date</label>
+                                    <input className="form-control" type="date" id="date" name="date" value={props.form.date}
+                                        onChange={props.handleDate} />
 
                                     <label className="form-label" htmlFor="res-time">Choose time</label>
-                                    <select className="form-select" id="res-time" name="time" value={props.form.time}
+                                    <select className="form-select" id="res-time" name="time" value={props.form.time} onChange={props.handleChange}>
 
-                                        onChange={props.handleChange}>
-                                        {times.map((time, index) => <option key={index}>{time}</option>)}
+                                        {props.availableTimes.map((time, index) => <option key={index}>{time}</option>)}
+
                                     </select>
 
                                     <label className="form-label" htmlFor="guests">Number of guests</label>
