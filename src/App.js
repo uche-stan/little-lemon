@@ -1,38 +1,35 @@
 import Header from './components/Header';
+
 import Main from './components/Main';
 import Footer from './components/Footer';
 import Foot from './components/Foot';
 import { Route, Routes } from 'react-router-dom'
 import HomePage from './components/HomePage';
 import Hero from './components/Hero';
-import BookingPage from './components/BookingPage';
-
-import MyApp from './components/MyApp';
 
 import './App.css';
-
 
 function App() {
   return (
     <>
 
-      
+      <Header />
+
      
 
+      <Main />
 
 
+      <Footer />
 
 
 
       <Routes>
 
         <Route path='/' element={<HomePage />}></Route>
-        <Route path='/my-app' element={<MyApp />}></Route>
-        <Route path='/booking-page' element={<BookingPage />}></Route>
-        
       </Routes>
 
-
+     
 
 
 

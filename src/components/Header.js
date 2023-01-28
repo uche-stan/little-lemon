@@ -16,13 +16,23 @@ export default function Header() {
 
 
 
-        <header id="header" >
+        <header id="header" className="container-fluid bg-light  " >
+
+            <div className="row pt-3 ">
+
+                <div className="logo col-12 col-sm-4 d-flex justify-content-center flex-row-sm-reverse ">
+
+                    <img src={logo} alt="logo" height="40px" />
+
+                </div>
+
+                <div className="navbar col-12 col-sm-8 d-flex justify-content-start d-none d-sm-flex">
+
+                    <Nav />
+
+                </div>
 
             <div className="hamburger"><img src={hamburgerIcon} alt="Hamburger" width="30px"/></div>
-
-            <div>
-
-                <img src={logo} alt="logo" />
 
             </div>
 

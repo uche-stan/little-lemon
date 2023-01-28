@@ -1,4 +1,5 @@
 import Hero from "./Hero"
+
 import Specials from "../Specials"
 import { useState, useReducer } from "react"
 import BookingPage from "./BookingPage"
@@ -54,16 +55,12 @@ export default function Main() {
         <>
 
             <main>
+                
+              <Hero />
 
-                <Hero />
+              <Specials />
 
-                <Specials />
 
-                <BookingPage
-                    availableTimes={availableTimes}
-                    updateTimes={updateTimes}
-                    dispatch ={dispatch}
-                />
 
             </main>
 

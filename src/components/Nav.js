@@ -1,4 +1,4 @@
-import { Link } from "react-router-dom"
+
 
 export default function Nav() {
 
@@ -6,11 +6,13 @@ export default function Nav() {
 
         <>
 
-            <nav id="nav">
+            <nav id="myNav">
 
-                <ul className="  ">
+                <ul className="d-flex gap-5 pt-2   ">
                     <li>
-                        <Link to="/" className="nav-link">Home</Link>
+                        <a href="#">
+                            Home
+                        </a>
                     </li>
 
 
@@ -19,6 +21,11 @@ export default function Nav() {
                     </li>
 
 
+                    <li>
+                        <a href="#">
+                            About
+                        </a>
+                    </li>
 
                     <li>
                         <Link to="/" className="nav-link">Menu</Link>

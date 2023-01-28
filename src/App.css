@@ -1,16 +1,23 @@
- /* 
 
+/* General */
 
 h1, h2, h3, h4, h5, h6 {
   font-family: "markazi text";
  
 }
 
+/* Header */
+
+#header .logo {
 
 
+}
 
 @media (max-width: 768px) {
- 
+  #header .logo {
+   
+  
+  }
 
   #header .navbar{
    
@@ -21,32 +28,20 @@ h1, h2, h3, h4, h5, h6 {
 }
 
 
+/* Nav */
 
-
-#nav ul{
-
-  display: flex;
-  flex-flow: row wrap;
-  justify-content: stretch;
-  
-}
-
-#nav li{
+nav li{
 
   list-style-type: none;
 }
 
-#nav li a{
+nav li a{
 
   text-decoration: none;
   color: black;
-  display: inline-block;
-  padding:0 20px;
-  
-  
 }
 
-#nav li a:hover{
+nav li a:hover{
   color: #495E57
 }
 
@@ -55,7 +50,7 @@ h1, h2, h3, h4, h5, h6 {
   height: 60px;
 }
 
-
+/* Main */
 
 .main-box{
 
@@ -63,7 +58,7 @@ h1, h2, h3, h4, h5, h6 {
 }
 
 
-
+/* Footer */
 
 #footer{
 
@@ -147,7 +142,7 @@ h1, h2, h3, h4, h5, h6 {
 
 
 
-
+/* Hamburger Menu */
 
 
 .menu {
@@ -167,7 +162,7 @@ h1, h2, h3, h4, h5, h6 {
 
 
 
-
+/* Hero  */
 
 #hero{
   width: 100%;
@@ -319,7 +314,7 @@ a:hover{
 #header {
 
   display: flex;
-  justify-content:space-around;
+  justify-content: center;
  background: white;
  
 
@@ -331,22 +326,6 @@ a:hover{
   margin: 12px 0;
 
 }
-
-@media (min-width: 768px) {
- #header .hamburger, .basket{
-  display: none;
- }
-
- #header {
-
-  display: flex;
-  justify-content:center;
- 
- 
-
-}
-}
-
 
 /* Nav */
 
@@ -467,33 +446,6 @@ a:hover{
     margin: 80px 10px;
   }
 
-  #specials h2{
-
-    font-weight: bold;
-  }
-
-  #specials .orders{
-     display: flex;
-    flex-flow: row nowrap;
-    justify-content:space-around; 
-    
-   
-    
-   
-   
-    overflow: scroll;
-  }
-
-  #specials .orders button{
-
-   background: #edefee;
-   color:#495E57;
-   font-weight: bold;
-   overflow-x: scroll;
- 
-  }
-
-
 
   #specials .card-title > p{
     font-weight: bold;
@@ -530,27 +482,7 @@ a:hover{
 
     }
 
-    #specials .orders{
-
-      display: none;
-      flex-flow: row nowrap;
-      justify-content: space-around;
     }
-  
-
-    }
-
-
-    @media (max-width: 768px) {
-   
-    
-      #specials .specials{
-  
-        display: none;
-       
-      }
-  
-      }
 
     #specials button{
 
@@ -643,13 +575,3 @@ a:hover{
       text-decoration: none;
     }
     
-
-
-    /* Booking form */
-
-    #booking-form form{
-
-      display: grid; 
-      max-width: 200px; 
-      gap: 20px;
-    }
